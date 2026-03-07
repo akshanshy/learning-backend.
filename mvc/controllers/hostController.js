@@ -1,4 +1,3 @@
-
 const registeredHomes = [];
 const Home = require("../models/home");
 
@@ -14,15 +13,4 @@ exports.postAddHome = (req, res, next) => {
   res.render('host/home-added', {pageTitle: 'Home Added Successfully', currentPage: 'homeAdded'});
 }
 
-exports.getallhomes = (req, res, next) => {
-
-  Home.fetchAll((homes) => {
-    res.render('store/home-list', { 
-      registeredHomes: homes,
-      pageTitle: 'airbnb Home',
-      currentPage: 'Home'
-    });
-  });
-
-};
 exports.registeredHomes = registeredHomes;
