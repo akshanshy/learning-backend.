@@ -23,3 +23,6 @@ exports.getBookings = (req, res, next) => {
 
 };
 exports.registeredHomes = registeredHomes;
+// exports.postAddHome = (req, res, next) => {
+//   const home = new Home(
+//     req.body.title,  
